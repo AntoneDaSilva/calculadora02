@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#pai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 88px;
+}
+
+#display-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 20, 20);
+}
+
+#teclas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 225px;
+}
+
+.teclas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #aaa;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+   
+}
