@@ -37,6 +37,9 @@ teclasOp.forEach((el) => {
     el.addEventListener('click', (evt) => {
         if(!sinal){
             sinal = true
+            if(display_view.innerHTML == '0'){
+                display_view.innerText = ''
+            }
                 display_view.innerHTML += evt.target.innerHTML
             
            
@@ -48,4 +51,11 @@ tlimpar.addEventListener('click', (evt)=>{
     display_view.innerHTML = "0"
     sinal = false
     decimal = false
+})
+
+res.addEventListener('click', () => {
+    sinal = false;
+    decimal = false;
+    const igual = eval(display_view.innerHTML);
+    display_view.innerHTML = igual
 })
